@@ -27,7 +27,8 @@
   }
 
   img {
-    vertical-align: top;
+    height: 26px;
+    width: 26px;
     padding-right: 5px;
   }
 }
@@ -38,7 +39,7 @@
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   text-transform: uppercase;
   align-items: center;
   text-align: center;
@@ -83,5 +84,22 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
+  }
+
+  .prospectus {
+    width: 100%;
+    margin-top: 235px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 450px;
+    margin-bottom: 15px;
+    font-size: 14px;
+
+    @include xs-screen {
+      margin-top: 30px;
+      margin-right: 0;
+      justify-content: center;
+    }
   }
 }
