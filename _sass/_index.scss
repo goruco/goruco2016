@@ -12,12 +12,27 @@
   display: flex;
   justify-content: center;
 
+  @include sm-screen {
+    height: 72px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  @include xs-screen {
+    height: 42px;
+  }
+
   .header-links {
     margin-left: 100px;
     margin-top: 4px;
 
     a {
       padding-right: 10px;
+    }
+
+    @include sm-screen {
+      margin-left: 0;
+      padding-bottom: 30px;
     }
   }
 
@@ -30,6 +45,20 @@
     height: 26px;
     width: 26px;
     padding-right: 5px;
+  }
+}
+
+.slider-nav {
+  background-color: $red;
+  height: 20px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+
+  a {
+    padding: 0 10px;
   }
 }
 
