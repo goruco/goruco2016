@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class='blog container'>
+  <div class='col-xs-12'>
+    <div class='news'>
+      <div class='divider'>
+        <hr />
+        <img src='/assets/images/ruby-hr.png' />
+      </div>
+
+      <h2>Latest News</h2>
+
+      {% for post in site.posts %}
+        <div class='post-excerpt'>
+          <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+          <h3>{{ post.title }}</h3>
+          <p>
+            {{ post.excerpt }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
