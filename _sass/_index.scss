@@ -103,3 +103,32 @@
     }
   }
 }
+
+.news {
+  .divider {
+    margin-top: 55px;
+    margin-bottom: 50px;
+
+    hr {
+      border-top: 2px solid #DBD7D3;
+    }
+
+    img {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  h2 {
+    font-size: 38px;
+    font-weight: 900;
+    text-shadow: -3px 3px 0px rgba(0,0,0,0.15);
+    letter-spacing: 3.49px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
