@@ -13,11 +13,15 @@ layout: default
       <h2>Latest News</h2>
 
       {% for post in site.posts %}
-        <div class='post-excerpt'>
+        <div class='post-excerpt' id='{{post.title | slugify }}'>
+          <a class='post-anchor' href='#{{ post.title | slugify }}'>
+            <img src='/assets/images/anchor.png' />
+          </a>
+
           <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
           <h3>{{ post.title }}</h3>
           <p>
-            {{ post.excerpt }}
+            {{ post.content }}
           </p>
         </div>
       {% endfor %}

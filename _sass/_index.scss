@@ -1,67 +1,3 @@
-.header {
-  width: 100%;
-  height: 52px;
-  padding-top: 10px;
-  background-color: $red;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-bottom: 0;
-  border-color: transparent;
-  display: flex;
-  justify-content: center;
-
-  @include sm-screen {
-    height: 72px;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  @include xs-screen {
-    height: 42px;
-  }
-
-  .header-links {
-    margin-left: 100px;
-    margin-top: 4px;
-
-    a {
-      padding-right: 10px;
-    }
-
-    @include sm-screen {
-      margin-left: 0;
-      padding-bottom: 30px;
-    }
-  }
-
-  .title {
-    font-size: 18px;
-    vertical-align: bottom;
-  }
-
-  img {
-    height: 26px;
-    width: 26px;
-    padding-right: 5px;
-  }
-}
-
-.slider-nav {
-  background-color: $red;
-  height: 20px;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  padding-bottom: 30px;
-
-  a {
-    padding: 0 10px;
-  }
-}
-
 .announcement {
   height: 720px;
   background: $red no-repeat center 63% url("/assets/images/goruco-x.png");
@@ -76,6 +12,7 @@
 
   @include xs-screen {
     height: 375px;
+    padding: 0 30px;
   }
 
   h1 {
@@ -133,26 +70,31 @@
   }
 }
 
-.news {
-  color: $text-color;
+.divider {
+  position: relative;
+  margin-top: 55px;
+  margin-bottom: 50px;
 
-  .divider {
-    margin-top: 55px;
-    margin-bottom: 50px;
-
-    hr {
-      border-top: 2px solid #DBD7D3;
-    }
-
-    img {
-      position: absolute;
-      top: 25px;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  hr {
+    border-top: 2px solid #DBD7D3;
   }
+
+  img {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.news {
+  margin-bottom: 30px;
+}
+
+.news, .info-wrapper {
+  color: $text-color;
 
   h2, h3, h4 {
     text-transform: uppercase;
@@ -174,6 +116,64 @@
   }
 }
 
+
+.info-top-divider {
+  margin-top: 52px;
+  margin-bottom: -30px;
+}
+
+.info-wrapper {
+  border: 2px solid $border-gray;
+  border-radius: 10px;
+  background: $gray2;
+  padding: 35px;
+
+  .divider {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  a, a:visited {
+    text-decoration: none;
+    color: $red;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
+
+  .info {
+    margin-bottom: 80px;
+  }
+
+  .info:last-child {
+    margin-bottom: 15px;
+  }
+
+  .contact-info {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: $gray-text-color;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+.code-of-conduct {
+  margin: 30px 0;
+  text-align: center;
+}
+
 .post-excerpt {
   border: 2px solid $border-gray;
   border-radius: 10px;
@@ -181,7 +181,6 @@
   padding: 25px 40px;
   margin-top: 25px;
   box-shadow: -10px 10px rgba(204,204,204,0.5);
-  margin-bottom: 100px;
 
   h3 {
     font-size: 28px;
