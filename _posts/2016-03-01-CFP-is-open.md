@@ -11,7 +11,7 @@ The Gotham Ruby Conference, a one-day, single-track event in New York City, is n
 
 We’re interested in talks on Ruby, but as the NYC Ruby community has grown and matured, our mission has expanded to include anything of interest to the modern development community.
 
-Accepted topics from last year included Raspberry Pi, CS theory, Community development, JS MVC frameworks, Human memory hacks, and even COBOL. We'd love to see proposals on Golang, Clojure, DevOps, Docker, or whatever else is on your mind.
+Accepted topics from last year included Building and testing resilient applications, Home Automation with the Amazon Echo and Ruby, Great Caching Disasters, Un-Artificial Intelligence, Rails 5, Turbolinks 3, Event sourcing, and even Sweaters as a service. We'd love to see proposals on Golang, Elixir, DevOps, Docker, or whatever else is exciting you as a maker lately.
 
 
 
