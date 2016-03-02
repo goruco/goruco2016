@@ -111,6 +111,7 @@
   h4 {
     font-size: 18px;
     font-weight: 500;
+    color: $gray-text-color;
     text-align: center;
     letter-spacing: 3.49px;
   }
@@ -176,6 +177,11 @@
   padding: 25px 40px;
   margin-top: 25px;
   box-shadow: -10px 10px rgba(204,204,204,0.5);
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+  }
 
   h3 {
     font-size: 28px;
