@@ -2,6 +2,5 @@
 layout: default
 ---
 
-For your viewing pleasure we have the full videos with slides for all of our 2015 speakers. 
-Click through to the videos for each speaker from the homepage. Thanks again to all who made 
-GORUCO 2015 such a blast!
+For your viewing pleasure we have the [full videos](http://videos.goruco.com/) with slides for all of our 2015 speakers.
+Thanks again to all who made GORUCO 2015 such a blast!
