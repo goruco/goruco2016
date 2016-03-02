@@ -24,8 +24,8 @@ layout: default
 <p>All speakers will receive free attendance to the event. In addition those speakers selected for a full-length talk will receive:</p>
 
 <ul>
-<li>A $300 honorarium.</li>
-<li>A $600 travel reimbursement if you live outside of the tri-state region.</li>
+<li>A $300 honorarium for local speakers.</li>
+<li>A $900 travel reimbursement if you live outside of the tri-state region.</li>
 </ul>
 
 <p>All proposals must specify exactly who will be presenting. For example, we will not accept proposals from companies unless they specify who will be presenting on behalf of the company. Presentations may be given by more than one person, but multiple speakers will split the honorarium and travel reimbursement.</p>
