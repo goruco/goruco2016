@@ -41,7 +41,7 @@ GORUCO believes in highlighting local talent. We reserve at least two slots for 
 
 Please submit as many proposals as you'd like through this form:
 
-[http://cfp.goruco.com/events/2016](http://cfp.goruco.com/events/2016)
+[CFP 2016](http://cfp.goruco.com/events/2016)
 
 Once the CFP is closed, we'll let everyone know if they've been accepted or not.
 
