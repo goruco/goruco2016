@@ -3,28 +3,33 @@
   height: 52px;
   padding-top: 10px;
   background-color: $red;
-  font-weight: 700;
+  opacity: .85;
+  font-weight: 500;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   margin-bottom: 0;
   border-color: transparent;
   display: flex;
   justify-content: center;
+  border-bottom: 3px solid #CF2941;
 
   @include sm-screen {
-    height: 72px;
+    padding-top: 25px;
     text-align: center;
     flex-direction: column;
   }
 
   @include xs-screen {
     height: 42px;
+    border-bottom: transparent;
   }
 
   .nav-links {
     margin-left: 100px;
     margin-top: 4px;
+    display: flex;
+    justify-content: flex-end;
 
     a {
       padding-right: 10px;
@@ -40,13 +45,13 @@
 .header {
   .title {
     font-size: 18px;
-    vertical-align: bottom;
+    font-weight: 700;
+    vertical-align: sub;
   }
 
   img {
     height: 26px;
     width: 26px;
-    padding-right: 5px;
   }
 }
 
@@ -64,11 +69,13 @@
 .slider-nav {
   background-color: $red;
   height: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   padding-bottom: 30px;
+  opacity: .85;
+  border-bottom: 3px solid #CF2941;
 
   a {
     padding: 0 10px

@@ -1,26 +1,35 @@
 <header>
   <div class='header'>
-    <a href='/'>
-      <img src='/assets/images/ruby.png' />
-      <span class='title'>Goruco</span>
-    </a>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-3 col-xs-12'>
+          <a href='/'>
+            <img src='/assets/images/ruby.png' />
+            <span class='title'>Goruco</span>
+          </a>
+        </div>
 
-    <div class='nav-links hidden-xs'>
+        <div class='col-xs-9 pull-right hidden-xs'>
+          <div class='nav-links hidden-xs'>
+            <a href="/blog">Blog</a>
+      <!--       <a href="">Tickets</a>
+            <a href="">Speakers</a>
+            <a href="">Location</a>
+            <a href="">Schedule</a> -->
+            <a href="{% if page.url != '/index.html' %}/{% endif %}#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='nav-links slider-nav visible-xs'>
       <a href="/blog">Blog</a>
-<!--       <a href="">Tickets</a>
+  <!--     <a href="">Tickets</a>
       <a href="">Speakers</a>
       <a href="">Location</a>
       <a href="">Schedule</a> -->
       <a href="{% if page.url != '/index.html' %}/{% endif %}#contact">Contact</a>
     </div>
-  </div>
-
-  <div class='nav-links slider-nav visible-xs'>
-    <a href="/blog">Blog</a>
-<!--     <a href="">Tickets</a>
-    <a href="">Speakers</a>
-    <a href="">Location</a>
-    <a href="">Schedule</a> -->
-  <a href="{% if page.url != '/index.html' %}/{% endif %}#contact">Contact</a>
   </div>
 </header>
