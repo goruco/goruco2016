@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+excerpt_separator: <!--more-->
 ---
 <p>
   We have included eleven articles and resources about writing talk proposals
@@ -20,7 +21,7 @@ layout: default
 <h4>
   Ready to read?
 </h4>
-
+<!--more-->
 <ul>
   <li>
     <a href="http://www.sarahmei.com/blog/2014/04/07/what-your-conference-proposal-is-missing/">
