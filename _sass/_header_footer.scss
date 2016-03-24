@@ -1,6 +1,8 @@
+header {
+  border-bottom: 3px solid #CF2941;
+}
 .header, .footer {
   width: 100%;
-  height: 52px;
   padding-top: 10px;
   background-color: $red;
   opacity: .85;
@@ -11,16 +13,19 @@
   margin-bottom: 0;
   border-color: transparent;
   border-bottom: 3px solid #CF2941;
-
   @include sm-screen {
     padding-top: 25px;
     text-align: center;
     flex-direction: column;
+    border-color: transparent;
+    border-bottom: 3px solid #CF2941;
   }
 
   @include xs-screen {
     height: 42px;
     border-bottom: transparent;
+    border-color: transparent;
+    border-bottom: 3px solid #CF2941;
   }
 
   .nav-links {
@@ -28,6 +33,7 @@
 
     a {
       padding-right: 10px;
+      font-weight: 500;
     }
 
     @include sm-screen {
@@ -39,7 +45,7 @@
 .header {
   display: flex;
   justify-content: center;
-
+  height: 52px;
   .title {
     font-size: 18px;
     font-weight: 700;
@@ -86,7 +92,7 @@
 
   .nav-links {
     a {
-      opacity: .5;
+      opacity: .85;
     }
 
     a:hover {
