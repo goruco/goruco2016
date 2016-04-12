@@ -52,6 +52,45 @@ layout: default
     </div>
   </div>
 
+  <div class='speakers'>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <div class='divider'>
+          <hr />
+          <img src='/assets/images/ruby-hr.png' />
+        </div>
+        <h2>Speakers</h2>
+      </div>
+    </div>
+
+
+    {% for speaker in site.data.speakers %}
+      <div class='col-sm-4'>
+        <div class='speaker'>
+          <img class='img-responsive small-image' src="{{ speaker.image }}" />
+          <h4>{{ speaker.name }}</h4>
+          <p class='excerpt'>
+            {{ speaker.excerpt }}
+            <a href='#' class='read-more' data-toggle="modal" data-target="#modal-{{ forloop.index }}">Read More</a>
+          </p>
+
+          <div class="modal fade" id="modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h4 class="modal-title">{{ speaker.name }}</h4>
+                  <img class='modal-img img-responsive' src="{{ speaker.image }}" />
+                  {{ speaker.bio }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+  </div>
+
   <div class='col-xs-12'>
     <div class='divider info-top-divider'>
       <hr />

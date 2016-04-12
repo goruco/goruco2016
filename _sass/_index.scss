@@ -106,7 +106,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   margin-bottom: 30px;
 }
 
-.news, .info-wrapper {
+.news, .info-wrapper, .speakers {
   color: $text-color;
 
   h2, h3, h4 {
@@ -223,4 +223,44 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
     line-height: 5rem;
     height: 5rem;
     font-weight: bold;
+}
+
+.speaker {
+  h4 {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .excerpt {
+    font-weight: 300;
+  }
+  .read-more {
+    color: $red;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 10px;
+  }
+
+  img {
+    border-radius: 12px;
+  }
+
+  .small-image {
+    text-align: center;
+  }
+
+  .modal-title {
+    margin-bottom: 15px;
+  }
+
+  .modal-body {
+    padding: 65px 70px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .modal-img {
+    margin-bottom: 15px;
+  }
 }
