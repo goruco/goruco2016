@@ -12,8 +12,8 @@ layout: default
     Conference in new york city
   </h1>
 
-  <a class='videos-button' href='http://cfp.goruco.com/events/2016' target='_blank'>
-    Call for Proposals
+  <a class='videos-button' href='https://ti.to/goruco/goruco-2016' target='_blank'>
+    Tickets
   </a>
 
   <div class='speaking'>
@@ -27,71 +27,157 @@ layout: default
 </div>
 
 <div class='container'>
-  <div class='col-xs-12'>
-    <div class='news'>
-      <div class='divider'>
-        <hr />
-        <img src='/assets/images/ruby-hr.png' />
-      </div>
+  <div class='row'>
+    <div class='col-xs-12'>
+      <div class='news'>
+        <div class='divider'>
+          <hr />
+          <img src='/assets/images/ruby-hr.png' />
+        </div>
 
-      <h2>Latest News</h2>
+        <h2>Latest News</h2>
 
-      {% assign latest_post = site.posts.first %}
-      <h3>{{ latest_post.date | date: '%B %d, %Y' }}</h3>
+        {% assign latest_post = site.posts.first %}
+        <h3>{{ latest_post.date | date: '%B %d, %Y' }}</h3>
 
-      <div class='post'>
-        <h2>{{ latest_post.title }}</h2>
-        <p>
-          {{ latest_post.excerpt }}
-        </p>
+        <div class='post'>
+          <h2>{{ latest_post.title }}</h2>
+          <p>
+            {{ latest_post.excerpt }}
+          </p>
 
-        <a class='read-more-button' href='{{ latest_post.url }}'>
-          Read More
-        </a>
+          <a class='read-more-button' href='{{ latest_post.url }}'>
+            Read More
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class='col-xs-12'>
-    <div class='divider info-top-divider'>
-      <hr />
-      <img src='/assets/images/ruby-hr.png' />
+  <div class='row'>
+    <div class='col-xs-12'>
+      <div class='divider info-top-divider'>
+        <hr />
+        <img src='/assets/images/ruby-hr.png' />
+      </div>
+
+      <div class='info-wrapper'>
+        <div class='info contact-info'>
+          <h2>Tickets</h2>
+          <p>ORGANIZED BY VOLUNTEERS. PROCEEDS GO BACK TO THE COMMUNITY</p>
+        </div>
+        <div class="row">
+          <div class='col-xs-12 col-sm-4 conference-updates'>
+            <p>GET CONFERENCE UPDATES</p>
+            <form action="//goruco.us2.list-manage.com/subscribe/post?u=00945f50a161df14372a84a34&amp;id=cdf39163af" form.signup-form action="//goruco.us2.list-manage.com/subscribe/post?u=00945f50a161df14372a84a34&amp;id=cdf39163af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+
+            <input class="signup required mail s3 ui-form-input-on-dark"  type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email Address">
+            <input class="signup light-ui-btn" type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe">
+            <div style="position: absolute; left: -5000px;">
+              <input name="b_00945f50a161df14372a84a34_cdf39163af" tabindex="-1" type="text" value="">
+            </div>
+            </form>
+            <p>
+              Or get updates on <a href='https://twitter.com/goruco' target="_blank">Twitter</a>
+            </p>
+          </div>
+          <div class='col-xs-12 col-sm-8'>
+            <div class="row conference-tickets">
+              <div class="col-xs-6">
+                <h3>Regular</h3>
+                <span class="price-cost">$399</span>
+              </div>
+              <div class="col-xs-6">
+                <h3>Diversity <span><i class=""></i></span></h3>
+                <span class="price-cost">$199</span>
+              </div>
+              <div class="col-xs-12">
+                <a class='dark-ui-btn' href='https://ti.to/goruco/goruco-2016' target='_blank'>
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class='info-wrapper'>
-<!--       <div class='info'>
-        <h2>Location</h2>
-        <center><img class='img-responsive' src='https://i.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg'></center>
-      </div> -->
-
-
-      <div class='info contact-info' id="contact">
- <!--        <div class='divider'>
+  <div class='speaker-section' id="speakers">
+    <div class='row'>
+      <div class='col-xs-12'>
+        <div class='divider'>
           <hr />
           <img src='/assets/images/ruby-hr.png' />
+        </div>
+        <h2>Speakers</h2>
+      </div>
+    </div>
+
+    <div class='speakers'>
+      {% for speaker in site.data.speakers %}
+        <div class='speaker'>
+          <img class='img-responsive small-image' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
+          <div class='speaker-info'>
+            <h4>{{ speaker.name }}</h4>
+            <h5>{{speaker.title}}</h5>
+            <h6>{{ speaker.location }}</h6>
+            <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
+          </div>
+          <p class='excerpt'>
+            {{ speaker.bio | truncatewords: 25 }}
+            <a href='#' class='read-more' data-toggle="modal" data-target="#modal-{{ forloop.index }}">Read More</a>
+          </p>
+
+          <div class="modal fade" id="modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h4 class="modal-title">
+                    {{ speaker.name }}
+                    <span class='modal-location'>{{ speaker.location }}</span>
+                  </h4>
+                  <img class='modal-img img-responsive' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
+                  <div class='modal-twitter'>
+                    <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
+                  </div>
+                  {{ speaker.bio }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='col-xs-12'>
+      <div class='divider info-top-divider'>
+        <hr />
+        <img src='/assets/images/ruby-hr.png' />
+      </div>
+
+      <div class='info-wrapper'>
+  <!--       <div class='info'>
+          <h2>Location</h2>
+          <center><img class='img-responsive' src='https://i.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg'></center>
         </div> -->
 
-        <h2>Contact Us</h2>
-        <p>
-          Send us an email <a href='mailto:info@goruco.com'>info@goruco.com</a>
-        </p>
-        <p>
-          Follow us on <a href='https://twitter.com/goruco' target="_blank">Twitter</a>
-        </p>
 
-         <div class='divider'>
-          <hr />
-        </div>
+        <div class='info contact-info' id="contact">
+   <!--        <div class='divider'>
+            <hr />
+            <img src='/assets/images/ruby-hr.png' />
+          </div> -->
 
-        <h2>Get Updates</h2>
-        <form action="//goruco.us2.list-manage.com/subscribe/post?u=00945f50a161df14372a84a34&amp;id=cdf39163af" form.signup-form action="//goruco.us2.list-manage.com/subscribe/post?u=00945f50a161df14372a84a34&amp;id=cdf39163af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
-
-          <input class="signup required mail s3 ui-form-input-on-dark pg-home-input"  type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email">
-          <input class="signup pg-home-submit ui-btn" type="submit" value="Update Me" name="subscribe" id="mc-embedded-subscribe">
-          <div style="position: absolute; left: -5000px;">
-            <input name="b_00945f50a161df14372a84a34_cdf39163af" tabindex="-1" type="text" value="">
-          </div>
-        </form>
+          <h2>Contact Us</h2>
+          <p>
+            Send us an email <a href='mailto:info@goruco.com'>info@goruco.com</a>
+          </p>
+          <p>
+            Follow us on <a href='https://twitter.com/goruco' target="_blank">Twitter</a>
+          </p>
       </div>
     </div>
   </div>
