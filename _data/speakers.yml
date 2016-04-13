@@ -6,6 +6,10 @@
   twitter: "@nodunayo"
   location: London, England
   bio: Nadia co-founded Ignition Works in order to find fun and sustainable ways to build worthwhile software products. She has taught good engineering practices through pair programming at Pivotal Labs and on their Cloud Foundry team. She originally learnt to code at Makers Academy and she runs the Ruby Book Club podcast in her spare time.
+- name: Aditya Mukerjee
+  twitter: "@chimeracoder"
+  location: New York, NY
+  bio: Aditya is an engineer at Stripe on the Risk team, tased in New York City. He studied statistics at Columbia and computer science at Cornell, and has been writing Go professionally for the past four years. When not defending users against online fraudsters, he spends his free time playing German-style board games and listening to embarrassing music.
 - name: Fabio Akita
   twitter: "@akitaonrails"
   location: Brazil, NY
@@ -34,6 +38,10 @@
   twitter: "@rossta"
   location: New York, NY
   bio: I discovered my passion for programming in an inner-city middle school in Houston, Texas where I was a first year teacher with Teach for America. Armed with a Lego Mindstorms kit, I started an after-school robotics club and eventually, with a lot of hard work, my students marched all the way to the Texas Botball championship. Later on, I realized programming was something I wanted to do full-time. I still miss teaching so don't be surprised if I have to resist the urge to issue a few detentions.
+- name: Aja Hammerly
+  location: Seattle, WA
+  twitter: "@thagomizer_rb"
+  bio: Aja lives in Seattle where she is a Developer Advocate at Google and a member of the Seattle Ruby Brigade. Her favorite languages are Ruby and Prolog. She also loves working with large piles of data. In her free time she enjoys skiing, cooking, knitting, and long coding sessions on the beach.
 - name: Adam Cuppy
   twitter: "@AdamCuppy"
   location: San Diego, CA
