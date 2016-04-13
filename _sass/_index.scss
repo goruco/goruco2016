@@ -106,7 +106,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   margin-bottom: 30px;
 }
 
-.news, .info-wrapper, .speakers {
+.news, .info-wrapper, .speaker-section {
   color: $text-color;
 
   h2, h3, h4 {
@@ -225,10 +225,40 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
     font-weight: bold;
 }
 
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .speaker {
+  margin-top: 35px;
+  width: 31%;
+
+  @include xs-screen {
+    width: 100%;
+  }
+
+  .speaker-info {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 10px;
+
+    a {
+      color: $red;
+    }
+  }
+
   h4 {
     font-weight: 700;
-    text-align: center;
+    margin-bottom: 0;
+  }
+
+  h6 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 
   .excerpt {
@@ -244,23 +274,46 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 
   img {
     border-radius: 12px;
-  }
 
-  .small-image {
-    text-align: center;
+    @include xs-screen {
+      margin: auto;
+    }
   }
 
   .modal-title {
     margin-bottom: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .modal-location {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-left: 5px;
   }
 
   .modal-body {
     padding: 65px 70px;
     font-size: 18px;
     font-weight: 300;
+
+    @include xs-screen {
+      padding: 35px 35px;
+    }
   }
 
-  .modal-img {
-    margin-bottom: 15px;
+  .modal-twitter {
+    color: $red;
+    border: 2px solid $gray;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    a {
+      font-size: 18px;
+    }
   }
 }
