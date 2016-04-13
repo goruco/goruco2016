@@ -116,68 +116,69 @@ layout: default
 
     <div class='speakers'>
       {% for speaker in site.data.speakers %}
-        <div class='speaker'>
-          <img class='img-responsive small-image' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
-          <div class='speaker-info'>
-            <h4>{{ speaker.name }}</h4>
-            <h5>{{speaker.title}}</h5>
-            <h6>{{ speaker.location }}</h6>
-            <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
-          </div>
-          <p class='excerpt'>
-            {{ speaker.bio | truncatewords: 25 }}
-            <a href='#' class='read-more' data-toggle="modal" data-target="#modal-{{ forloop.index }}">Read More</a>
-          </p>
+         <div class='speaker'>
+           <img class='img-responsive small-image' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
+           <div class='speaker-info'>
+             <h4>{{ speaker.name }}</h4>
+             <h5>{{speaker.title}}</h5>
+             <h6>{{ speaker.location }}</h6>
+             <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
+           </div>
+           <p class='excerpt'>
+             {{ speaker.bio | truncatewords: 25 }}
+             <a href='#' class='read-more' data-toggle="modal" data-target="#modal-{{ forloop.index }}">Read More</a>
+           </p>
 
-          <div class="modal fade" id="modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <h4 class="modal-title">
-                    {{ speaker.name }}
-                    <span class='modal-location'>{{ speaker.location }}</span>
-                  </h4>
-                  <img class='modal-img img-responsive' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
-                  <div class='modal-twitter'>
-                    <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
-                  </div>
-                  {{ speaker.bio }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class='row'>
-    <div class='col-xs-12'>
-      <div class='divider info-top-divider'>
-        <hr />
-        <img src='/assets/images/ruby-hr.png' />
+           <div class="modal fade" id="modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                 <div class="modal-body">
+                   <h4 class="modal-title">
+                     {{ speaker.name }}
+                     <span class='modal-location'>{{ speaker.location }}</span>
+                   </h4>
+                   <img class='modal-img img-responsive' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
+                   <div class='modal-twitter'>
+                     <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
+                   </div>
+                   {{ speaker.bio }}
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+        {% endfor %}
       </div>
+    </div>
 
-      <div class='info-wrapper'>
-  <!--       <div class='info'>
-          <h2>Location</h2>
-          <center><img class='img-responsive' src='https://i.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg'></center>
-        </div> -->
+    <div class='row'>
+      <div class='col-xs-12'>
+        <div class='divider info-top-divider'>
+          <hr />
+          <img src='/assets/images/ruby-hr.png' />
+        </div>
 
-
-        <div class='info contact-info' id="contact">
-   <!--        <div class='divider'>
-            <hr />
-            <img src='/assets/images/ruby-hr.png' />
+        <div class='info-wrapper'>
+    <!--       <div class='info'>
+            <h2>Location</h2>
+            <center><img class='img-responsive' src='https://i.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg'></center>
           </div> -->
 
-          <h2>Contact Us</h2>
-          <p>
-            Send us an email <a href='mailto:info@goruco.com'>info@goruco.com</a>
-          </p>
-          <p>
-            Follow us on <a href='https://twitter.com/goruco' target="_blank">Twitter</a>
-          </p>
+
+          <div class='info contact-info' id="contact">
+     <!--        <div class='divider'>
+              <hr />
+              <img src='/assets/images/ruby-hr.png' />
+            </div> -->
+
+            <h2>Contact Us</h2>
+            <p>
+              Send us an email <a href='mailto:info@goruco.com'>info@goruco.com</a>
+            </p>
+            <p>
+              Follow us on <a href='https://twitter.com/goruco' target="_blank">Twitter</a>
+            </p>
+        </div>
       </div>
     </div>
   </div>
