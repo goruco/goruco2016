@@ -130,7 +130,10 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
     text-align: center;
   }
 }
-
+.ticket-includes {
+  margin-top: 12px;
+  text-align: center;
+}
 .ticket-desc{
   font-size: 12px;
   text-align: center;
