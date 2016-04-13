@@ -25,35 +25,7 @@ layout: default
     </div>
   </div>
 </div>
-
 <div class='container'>
-  <div class='row'>
-    <div class='col-xs-12'>
-      <div class='news'>
-        <div class='divider'>
-          <hr />
-          <img src='/assets/images/ruby-hr.png' />
-        </div>
-
-        <h2>Latest News</h2>
-
-        {% assign latest_post = site.posts.first %}
-        <h3>{{ latest_post.date | date: '%B %d, %Y' }}</h3>
-
-        <div class='post'>
-          <h2>{{ latest_post.title }}</h2>
-          <p>
-            {{ latest_post.excerpt }}
-          </p>
-
-          <a class='read-more-button' href='{{ latest_post.url }}'>
-            Read More
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class='row'>
     <div class='col-xs-12'>
       <div class='divider info-top-divider'>
@@ -86,10 +58,12 @@ layout: default
               <div class="col-xs-6">
                 <h3>Regular</h3>
                 <span class="price-cost">$399</span>
+                <span class="ticket-desc">If your employer is buying your ticket, or you identify as part of the majority demographics of the Ruby/Rails community, this one is for you!</span>
               </div>
               <div class="col-xs-6">
                 <h3>Diversity <span><i class=""></i></span></h3>
                 <span class="price-cost">$199</span>
+                <span class="ticket-desc">If you identify as a minority in the Ruby/Rails community, this ticket is for you! It is 75% of the regular ticket price in our attemp to recognize the gender wage gap in the US as of 2011.</span>
               </div>
               <div class="col-xs-12">
                 <a class='dark-ui-btn' href='https://ti.to/goruco/2016' target='_blank'>
@@ -102,7 +76,6 @@ layout: default
       </div>
     </div>
   </div>
-
   <div class='speaker-section' id="speakers">
     <div class='row'>
       <div class='col-xs-12'>
@@ -150,7 +123,32 @@ layout: default
         {% endfor %}
       </div>
     </div>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <div class='news'>
+          <div class='divider'>
+            <hr />
+            <img src='/assets/images/ruby-hr.png' />
+          </div>
 
+          <h2>Latest News</h2>
+
+          {% assign latest_post = site.posts.first %}
+          <h3>{{ latest_post.date | date: '%B %d, %Y' }}</h3>
+
+          <div class='post'>
+            <h2>{{ latest_post.title }}</h2>
+            <p>
+              {{ latest_post.excerpt }}
+            </p>
+
+            <a class='read-more-button' href='{{ latest_post.url }}'>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class='row'>
       <div class='col-xs-12'>
         <div class='divider info-top-divider'>
