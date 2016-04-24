@@ -71,7 +71,7 @@ layout: default
               <div class="col-xs-6">
                 <h3>Diversity <span><i class=""></i></span></h3>
                 <span class="price-cost">$299</span>
-                <span class="ticket-desc">If you identify as a minority in 
+                <span class="ticket-desc">If you identify as a minority in
                   the Ruby/Rails community, this ticket is for you!
                   Please enter DIVERSITY as your discount code.
                   It is 75% of the regular ticket price in our attempt
@@ -91,6 +91,7 @@ layout: default
       </div>
     </div>
   </div>
+
   <div class='speaker-section' id="speakers">
     <div class='row'>
       <div class='col-xs-12'>
@@ -125,8 +126,8 @@ layout: default
                      {{ speaker.name }}
                      <span class='modal-location'>{{ speaker.location }}</span>
                    </h4>
-                   <img class='modal-img img-responsive' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
-                   <div class='modal-twitter'>
+                   <img class='modal-image img-responsive' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
+                   <div class='modal-link'>
                      <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
                    </div>
                    {{ speaker.bio }}
@@ -138,6 +139,62 @@ layout: default
         {% endfor %}
       </div>
     </div>
+
+  <div class='sponsor-section'>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <div class='divider'>
+          <hr />
+          <img src='/assets/images/ruby-hr.png' />
+        </div>
+        <h2>Sponsors</h2>
+        <h3 class='sponsors-subtitle'>A huge thanks to our amazing sponsors</h3>
+      </div>
+    </div>
+
+    <div class='sponsors'>
+      {% for sponsor_level in site.data.sponsors %}
+        {% assign level = sponsor_level[0] %}
+
+        <h4 class='sponsors-level-title'>
+          {% if level == 'platinum' %}
+            Platinum Sponsor
+          {% else %}
+            {{ level }} Sponsors
+          {% endif %}
+        </h4>
+
+        <div class='sponsor-level {{ level }}-sponsors'>
+          {% for sponsor in sponsor_level[1] %}
+            <div class='sponsor'>
+              <a href='#' data-toggle="modal" data-target="#{{ level }}-modal-{{ forloop.index }}">
+                <img class='img-responsive small-image' src="http://www.fillmurray.com/460/270" />
+              </a>
+
+              <div class="modal fade" id="{{ level }}-modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <h4 class="modal-title">
+                        {{ sponsor.name }}
+                        <span class='modal-location'>{{ sponsor.location }}</span>
+                      </h4>
+                      <img class='img-responsive modal-image' src="http://www.fillmurray.com/525/295" />
+                      <div class='modal-link'>
+                        <a href="{{ sponsor.website }}" target="_blank">{{ sponsor.website }}</a>
+                      </div>
+                      {{ sponsor.bio }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
     <div class='row'>
       <div class='col-xs-12'>
         <div class='news'>

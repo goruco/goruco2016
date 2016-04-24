@@ -106,7 +106,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   margin-bottom: 30px;
 }
 
-.news, .info-wrapper, .speaker-section {
+.news, .info-wrapper, .speaker-section, .sponsor-section {
   color: $text-color;
 
   h2, h3, h4 {
@@ -348,49 +348,106 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
     font-weight: 700;
     padding-left: 10px;
   }
+}
 
-  img {
-    border-radius: 12px;
+.modal-title {
+  letter-spacing: 0.5px;
+  text-align: left;
+}
 
-    @include xs-screen {
-      margin: auto;
-    }
+.modal-location {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  padding-left: 5px;
+}
+
+.modal-body {
+  padding: 65px 70px;
+  font-size: 18px;
+  font-weight: 300;
+
+  @include xs-screen {
+    padding: 35px 35px;
   }
+}
 
-  .modal-title {
-    margin-bottom: 15px;
-    letter-spacing: 0.5px;
-  }
+.modal-link {
+  color: $red;
+  border: 2px solid $gray;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 
-  .modal-location {
-    font-size: 16px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    padding-left: 5px;
-  }
-
-  .modal-body {
-    padding: 65px 70px;
+  a {
     font-size: 18px;
-    font-weight: 300;
-
-    @include xs-screen {
-      padding: 35px 35px;
-    }
   }
+}
 
-  .modal-twitter {
-    color: $red;
-    border: 2px solid $gray;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+.modal-image, .small-image {
+  border-radius: 12px;
 
-    a {
-      font-size: 18px;
-    }
+  @include xs-screen {
+    margin: auto;
+  }
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.sponsors-subtitle {
+  margin-top: 15px;
+}
+
+.sponsors-level-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sponsor-level {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sponsor {
+  border: 2px solid $border-gray;
+  border-radius: 10px;
+  box-shadow: -8px 8px rgba(204,204,204,0.5);
+  margin-right: 20px;
+}
+
+.platinum-sponsors {
+  margin-bottom: 45px;
+}
+
+.gold-sponsors{
+  margin-bottom: 25px;
+
+  .small-image {
+    height: 149px;
+  }
+}
+
+.silver-sponsors {
+  margin-bottom: 25px;
+
+  .small-image {
+    height: 109px;
+  }
+}
+
+.bronze-sponsors {
+  margin-bottom: 50px;
+
+  .small-image {
+    height: 68px;
   }
 }
