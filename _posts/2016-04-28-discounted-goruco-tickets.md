@@ -1,6 +1,7 @@
 ---
 layout: post
 excerpt_separator: <!--more-->
+title: Discounted GORUCO Tickets
 ---
 
 <p>
@@ -8,18 +9,25 @@ excerpt_separator: <!--more-->
   for those who identify as belonging to
   a group that is underrepresented in the technology industry.</p>
 
-<h3>Why offer a discount at all?</h3>
+<h3>Why offer a discount at all</h3>
 
 <p>
-  GORUCO's organizing committee believes our event
-  should reflect and model the values of our communities.
   Diversity and inclusivity have rightly risen to prominence
   as major points of concern in both our local community and
-  the broader Ruby community.</p>
+  the broader Ruby community.
+  GORUCO's organizing committee believes our event
+  should reflect and model the values of our communities.</p>
 
 <!--more-->
 
-<h3>How to?</h3>
+<p>
+  While we recognize that there is no quick fix to the problem
+  of making our communities more diverse, we hope that this discount
+  both signals that we are serious in our desire to broaden our reach
+  as well as somewhat eases the financial burden of attending in a
+  very practical way.</p>
+
+<h3>How to take advantage of this discount</h3>
 
 <p>
   The discount code is "diversity"
@@ -39,19 +47,19 @@ excerpt_separator: <!--more-->
   to take advantage of the discount at any time.</p>
 
 <p>
-  While we are not defining "underrepresented," the intent of the discount is
-  to help people out who might otherwise
-  have trouble paying full-price for the conference themselves.
-  Therefore we ask that those attendees whose employers typically pay
-  for conferences and training not use the discount
-  so we can make sure that the discount go to those people who most need it.</p>
-
-<p>
   By pairing our staggered ticket release with our discount code,
   we are hoping to reach a broader group of attendees
   who might otherwise have missed the ticketing rush
   by allowing those who identify as underrepresented in our community
   to take advantage of the discount at any point in our ticketing cycle.</p>
+
+<p>
+  While we are not defining "underrepresented," the intent of the discount is
+  to help people out who might otherwise
+  have trouble paying full-price for the conference themselves.
+  Therefore we ask that those attendees whose employers typically pay
+  for conferences and training not use the discount
+  so we can make sure that the savings go to those people who most need it.</p>
 
 <h3>Thanks to Stride</h3>
 
