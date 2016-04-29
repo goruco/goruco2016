@@ -32,7 +32,8 @@ title: Discounted GORUCO Tickets
 <p>
   The discount code is "diversity"
   and it will save you $100 off of a full-priced ticket.
-  You can enter it on the page as you buy your ticket.</p>
+  You can enter it on the page as you buy your ticket.
+  <a href="https://ti.to/goruco/2016">Buy your ticket now.</a></p>
 
 <p>
   The choice of a discount code reflects the nature of this year's experiment
