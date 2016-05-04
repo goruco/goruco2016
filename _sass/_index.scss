@@ -356,12 +356,14 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
       margin: auto;
     }
   }
-
+  .modal-excerpt{
+    font-weight: 300;
+    font-size: 13px;
+  }
   .modal-title {
     margin-bottom: 15px;
     letter-spacing: 0.5px;
   }
-
   .modal-location {
     font-size: 16px;
     font-weight: 300;
@@ -369,7 +371,10 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
     letter-spacing: 0;
     padding-left: 5px;
   }
-
+  .modal-description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .modal-body {
     padding: 65px 70px;
     font-size: 18px;
@@ -379,7 +384,6 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
       padding: 35px 35px;
     }
   }
-
   .modal-twitter {
     color: $red;
     border: 2px solid $gray;

@@ -112,8 +112,8 @@ layout: default
              <h6>{{ speaker.location }}</h6>
              <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
            </div>
-           <p class='excerpt'>
-             {{ speaker.bio | truncatewords: 25 }}
+           <p class='modal-excerpt'>
+             {{ speaker.description | truncatewords: 30 }}
              <a href='#' class='read-more' data-toggle="modal" data-target="#modal-{{ forloop.index }}">Read More</a>
            </p>
 
@@ -125,11 +125,14 @@ layout: default
                      {{ speaker.name }}
                      <span class='modal-location'>{{ speaker.location }}</span>
                    </h4>
+                   <h5>{{speaker.title}}</h5>
+                   <div class="modal-description">{{ speaker.description }}</div>
                    <img class='modal-img img-responsive' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
                    <div class='modal-twitter'>
                      <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
                    </div>
-                   {{ speaker.bio }}
+
+                   <i>{{ speaker.bio }}</i>
                  </div>
                </div>
              </div>
