@@ -8,10 +8,10 @@ title: Announcing scholarship applications 2016
 
 <p>
   GORUCO’s diversity scholarship program aims to support
-  traditionally underrepresented and/or marginalized persons
+  traditionally underrepresented and/or marginalized people
   in the Ruby community (including, but not limited to
-  persons identifying as women, people of color, LGBT, and/or
-  persons with disabilities) who may not otherwise have the opportunity
+  people identifying as women, people of color, LGBT, and/or
+  people with disabilities) who may not otherwise have the opportunity
   to attend the conference for financial reasons.</p>
 
 <!--more-->
@@ -32,9 +32,9 @@ title: Announcing scholarship applications 2016
 <p>
   To be eligible for a GORUCO Scholarship,
   you must be a full or part-time student;
-  or a person identifying as a woman, person of colour, LGBT or
+  or a person identifying as a woman, person of color, LGBT or
   person with disabilities;
-  or a member/alumni of recognised minority-focused STEM organisations;
+  or a member/alumni of recognized minority-focused STEM organisations;
   and be unable to attend without some financial assistance.</p>
 
 <h3>Applying</h3>
