@@ -1,0 +1,30 @@
+.section {
+  margin-top: 60px;
+}
+
+.section-divider {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  hr {
+    border-top: 2px solid #DBD7D3;
+    margin-top: 8px;
+  }
+
+  img {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.section-page {
+  margin-top: 80px;
+}

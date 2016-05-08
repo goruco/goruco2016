@@ -2,8 +2,11 @@
 ---
 
 @import 'colors';
+@import 'variables';
 @import 'fonts';
 @import 'media';
+@import 'type';
+@import 'modules';
 
 body {
   font-family: 'Museo Sans';
@@ -31,4 +34,6 @@ p {
 
 @import 'header_footer';
 @import 'index';
+@import 'modal';
+@import 'section';
 @import 'blog';

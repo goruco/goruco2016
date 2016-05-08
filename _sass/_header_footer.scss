@@ -1,18 +1,22 @@
 header {
   border-bottom: 3px solid #CF2941;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 2px solid rgba(white, 0.1);
 }
+
 .header, .footer {
   width: 100%;
   padding-top: 10px;
   background-color: $red;
-  opacity: .85;
+  opacity: .8;
   font-weight: 500;
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0;
   border-color: transparent;
-  border-bottom: 3px solid #CF2941;
   @include sm-screen {
     padding-top: 25px;
     text-align: center;

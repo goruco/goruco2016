@@ -1,0 +1,18 @@
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: .7;
+  letter-spacing: 1.5px;
+
+  @include xs-screen {
+    font-size: 13px;
+  }
+}
+
+.type-large {
+  font-size: $type-large;
+}
+
+.type-center {
+  text-align: center;
+}
