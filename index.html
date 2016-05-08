@@ -168,7 +168,8 @@ layout: default
           {% for sponsor in sponsor_level[1] %}
             <div class='sponsor'>
               <a href='#' data-toggle="modal" data-target="#{{ level }}-modal-{{ forloop.index }}">
-                <img class='img-responsive small-image' src="http://www.fillmurray.com/460/270" />
+
+                <img class='img-responsive small-image' src="/assets/images/sponsors/{{ sponsor.name | slugify }}.png" />
               </a>
 
               <div class="modal fade" id="{{ level }}-modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -179,7 +180,7 @@ layout: default
                         {{ sponsor.name }}
                         <span class='modal-location'>{{ sponsor.location }}</span>
                       </h4>
-                      <img class='img-responsive modal-image' src="http://www.fillmurray.com/525/295" />
+                      <img class='img-responsive small-image' src="/assets/images/sponsors/{{ sponsor.name | slugify }}.png" />
                       <div class='modal-link'>
                         <a href="{{ sponsor.website }}" target="_blank">{{ sponsor.website }}</a>
                       </div>
