@@ -1,4 +1,5 @@
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
 .announcement {
   height: 720px;
   background: $red no-repeat center 63% url("/assets/images/goruco-x.png");
@@ -83,30 +84,27 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   }
 }
 
-.divider {
-  position: relative;
-  margin-top: 55px;
-  margin-bottom: 50px;
-
-  hr {
-    border-top: 2px solid #DBD7D3;
-  }
-
-  img {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .news {
   margin-bottom: 30px;
 }
 
-.news, .info-wrapper, .speaker-section {
+.ticket-includes {
+  margin-top: 12px;
+  text-align: center;
+}
+.ticket-desc{
+  font-size: 10px;
+  line-height: 16px;
+  color: $gray-text-color;
+  text-align: center;
+}
+
+.content-wrapper {
+  border: 2px solid $border-gray;
+  border-radius: 10px;
+  padding: 35px;
+  padding-top: 0;
+  position: relative;
   color: $text-color;
 
   h2, h3, h4 {
@@ -114,7 +112,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   }
 
   h2 {
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 38px;
     font-weight: 900;
     text-shadow: -3px 3px 0px rgba(0,0,0,0.15);
@@ -129,25 +127,18 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
     letter-spacing: 1.5px;
     text-align: center;
   }
-}
-.ticket-includes {
-  margin-top: 12px;
-  text-align: center;
-}
-.ticket-desc{
-  font-size: 12px;
-  text-align: center;
-}
-.info-top-divider {
-  margin-top: 52px;
-  margin-bottom: -30px;
-}
 
-.info-wrapper {
-  border: 2px solid $border-gray;
-  border-radius: 10px;
-  background: $gray2;
-  padding: 35px;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    background: $gray2;
+    z-index: -100;
+    border-radius: 10px;
+  }
 
   .divider {
     margin-top: 20px;
@@ -159,12 +150,8 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
     color: $red;
   }
 
-  h2 {
-    margin-top: 30px;
-  }
-
   .info {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 
   .info:last-child {
@@ -173,10 +160,6 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 
   .contact-info {
     text-align: center;
-
-    h2 {
-      margin-bottom: 30px;
-    }
 
     p {
       color: $gray-text-color;
@@ -204,13 +187,19 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 
 .conference-updates{
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 30px;
   background: #EDE9E4;
   border-radius: 8px;
+  @extend .module;
+
+  input {
+    width: 100%;
+  }
 }
 
 .conference-tickets{
+  @extend .module;
+  padding: 30px;
   background: #FFFFFF;
   border-radius: 8px;
   a {
@@ -251,9 +240,8 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  font-size: 38px;
-  font-weight: 500;
-  height: 100px;
+  font-size: $type-large;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
 }
@@ -328,7 +316,6 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 
   h4 {
     font-weight: 700;
-    margin-bottom: 0;
   }
 
   h6 {
@@ -348,53 +335,62 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
     font-weight: 700;
     padding-left: 10px;
   }
+}
 
-  img {
-    border-radius: 12px;
+.sponsors {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
 
-    @include xs-screen {
-      margin: auto;
-    }
-  }
-  .modal-excerpt{
-    font-weight: 300;
-    font-size: 13px;
-  }
-  .modal-title {
-    margin-bottom: 15px;
-    letter-spacing: 0.5px;
-  }
-  .modal-location {
-    font-size: 16px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    padding-left: 5px;
-  }
-  .modal-description{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .modal-body {
-    padding: 65px 70px;
-    font-size: 18px;
-    font-weight: 300;
+.sponsors-subtitle {
+  margin-top: 15px;
+}
 
-    @include xs-screen {
-      padding: 35px 35px;
-    }
-  }
-  .modal-twitter {
-    color: $red;
-    border: 2px solid $gray;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+.sponsors-level-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-    a {
-      font-size: 18px;
-    }
+.sponsor-level {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sponsor {
+  border: 2px solid $border-gray;
+  border-radius: 10px;
+  box-shadow: -8px 8px rgba(204,204,204,0.5);
+  margin-right: 20px;
+  background-color: white;
+}
+
+.platinum-sponsors {
+  margin-bottom: 45px;
+}
+
+.gold-sponsors{
+  margin-bottom: 25px;
+
+  .small-image {
+    height: 149px;
+  }
+}
+
+.silver-sponsors {
+  margin-bottom: 25px;
+
+  .small-image {
+    height: 109px;
+  }
+}
+
+.bronze-sponsors {
+  margin-bottom: 50px;
+
+  .small-image {
+    height: 68px;
   }
 }

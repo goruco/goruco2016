@@ -1,0 +1,33 @@
+#platinum:
+#  - name: Bill Murray
+#    website: http://poptarts.com
+#    bio: I like poptarts
+#    location: New York, NY
+
+gold:
+  - name: Hightower
+    website: https://www.gethightower.com/
+    bio: Hightower is a modern technology platform for the commercial real estate industry. Our team of engineers, designers and product managers create tools that improve collaboration, provide deeper insights and create greater efficiency for owners, brokers and tenants.
+    location: New York, NY
+
+silver:
+  - name: Dev Bootcamp
+    website: http://devbootcamp.com/
+    bio: Dev Bootcamp is the original, short-term, immersive software development program that transforms those new to coding into job-ready, full-stack web developers in a rigorous and supportive environment. Since 2012, we’ve helped more than 2,000 students learn to code and develop meaningful careers in the tech industry. Dev Bootcamp's New York campus also offers short-term coding workshops and a robust schedule of events focusing on the tech industry and tech culture.
+    location: New York, San Francisco, Chicago, San Diego, Seattle, Austin, DC
+
+  - name: StreetEasy
+    website: http://streeteasy.com/
+    bio: StreetEasy® is New York City’s leading local real estate marketplace, providing accurate and comprehensive for-sale and for-rent listings from hundreds of real estate brokerages throughout New York City and the major NYC metropolitan area. We are a technology-driven group who constantly strives to use the best engineering tools available to build a cutting edge product, and we’re hiring. Be part of a focused, talented team that is creating fast, beautiful, and innovative tools to change how people buy and rent homes. Learn more about our open positions here.
+    location: New York, NY 
+
+bronze:
+  - name: FIS 
+    website: http://www.fisglobal.com/
+    bio: Advanced Technology serves as a technology innovation incubator for the FIS’ Institutional and Wholesale business. We work with companies whose unique challenges require creative thinking and the clever uses of technology. We help our media and internet clients bring the latest technology and thinking to life and then apply these learnings to our financial services clients to accelerate their ideas from inspiration to production. Learn more at www.fisglobal.com/advanced-technology.
+    location: Jacksonville, FL
+
+  - name: WyeWorks
+    website: https://wyeworks.com/
+    bio: WyeWorks is the best way to expand your Rails team. We act as if we're part of your company, adopting your process and suggesting best practices. We are Agile, we show progress every day. We do code reviews and pair programming because quality is taken to heart. Our happy clients are our best credentials.
+    location: Montevideo, Uruguay
