@@ -17,6 +17,7 @@
       <!--
             <a href="">Location</a>
             <a href="">Schedule</a> -->
+            <a href="{% if page.url != '/index.html' %}/{% endif %}#sponsors">Sponsors</a>
             <a href="{% if page.url != '/index.html' %}/{% endif %}#contact">Contact</a>
             <a href="http://videos.goruco.com/" target="_blank">Past Videos</a>
           </div>
@@ -29,6 +30,7 @@
       <a href="/blog">News</a>
       <a href="https://ti.to/goruco/2016" target="_blank">Tickets</a>
       <a href="{% if page.url != '/index.html' %}/{% endif %}#speakers">Speakers</a>
+      <a href="{% if page.url != '/index.html' %}/{% endif %}#sponsors">Sponsors</a>
       <a href="{% if page.url != '/index.html' %}/{% endif %}#contact">Contact</a>
       <a href="http://videos.goruco.com/" target="_blank">Past Videos</a>
     </div>
