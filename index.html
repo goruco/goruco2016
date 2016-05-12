@@ -112,7 +112,7 @@ layout: default
                 <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
               </div>
               <p class='excerpt'>
-              {{ speaker.bio | truncatewords: 25 }}
+              {{ speaker.description | truncatewords: 25 }}
               <a href='#' class='read-more' data-toggle="modal" data-target="#modal-{{ forloop.index }}">Read More</a>
               </p>
 
@@ -128,7 +128,7 @@ layout: default
                       <div class='modal-link'>
                         <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
                       </div>
-                      {{ speaker.bio }}
+                      {{ speaker.description }}
                     </div>
                   </div>
                 </div>
