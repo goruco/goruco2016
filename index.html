@@ -124,10 +124,14 @@ layout: default
                         {{ speaker.name }}
                         <span class='modal-location'>{{ speaker.location }}</span>
                       </h4>
+                      <div class="modal-bio">
+                        <i>{{ speaker.bio }}</i>
+                      </div>
                       <img class='modal-image img-responsive' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
                       <div class='modal-link'>
                         <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.twitter }}</a>
                       </div>
+                      <h5>{{speaker.title}}</h5>
                       {{ speaker.description }}
                     </div>
                   </div>
