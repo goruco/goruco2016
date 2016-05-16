@@ -11,7 +11,7 @@ gold:
     location: New York, NY
   - name: Stride
     website: http://www.stridenyc.com/
-    bio: Stride is an Agile consultancy in NYC. We co-locate with tech teams to help you be your best. Think of us as Agile SWAT teams. We partner highly skilled Agile developers with your team. As a result, we leverage the skills of your entire team and help you improve code quality and your Agile process in perpetuity. Whether you seek process refinement help  (TDD, Refactoring, Monolith to Microservices, Estimates, Continuous Delivery, etc) or need to get high quality code out the door to launch your MVP,  Stride is here to help.
+    bio: Stride is an Agile software development consultancy in New York City. We co-locate with engineering teams in New York (like Plated, Paddle8, Gust, Sailthru, XO Group, Intent Media) to help you up your game and get stuff done. Think of us as Agile SWAT teams. We leverage the skills of your entire team and help you improve code quality and your Agile process in perpetuity. Whether you seek process refinement help (TDD, refactoring, microservices, estimates, continuous delivery, and more) or need to get high quality code out the door to launch your MVP, Stride is here to help.
     location: New York, NY
 
 silver:

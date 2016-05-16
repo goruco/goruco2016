@@ -65,5 +65,7 @@
 }
 
 .modal-dialog {
-  margin: 50px 10px;
+  @include xs-screen {
+    margin: 25px;
+  }
 }
