@@ -9,6 +9,10 @@ gold:
     website: https://www.gethightower.com/
     bio: Hightower is a modern technology platform for the commercial real estate industry. Our team of engineers, designers and product managers create tools that improve collaboration, provide deeper insights and create greater efficiency for owners, brokers and tenants.
     location: New York, NY
+  - name: Stride
+    website: http://www.stridenyc.com/
+    bio: Stride is an Agile consultancy in NYC. We co-locate with tech teams to help you be your best. Think of us as Agile SWAT teams. We partner highly skilled Agile developers with your team. As a result, we leverage the skills of your entire team and help you improve code quality and your Agile process in perpetuity. Whether you seek process refinement help  (TDD, Refactoring, Monolith to Microservices, Estimates, Continuous Delivery, etc) or need to get high quality code out the door to launch your MVP,  Stride is here to help.
+    location: New York, NY
 
 silver:
   - name: Dev Bootcamp
@@ -19,10 +23,10 @@ silver:
   - name: StreetEasy
     website: http://streeteasy.com/
     bio: StreetEasy® is New York City’s leading local real estate marketplace, providing accurate and comprehensive for-sale and for-rent listings from hundreds of real estate brokerages throughout New York City and the major NYC metropolitan area. We are a technology-driven group who constantly strives to use the best engineering tools available to build a cutting edge product, and we’re hiring. Be part of a focused, talented team that is creating fast, beautiful, and innovative tools to change how people buy and rent homes. Learn more about our open positions here.
-    location: New York, NY 
+    location: New York, NY
 
 bronze:
-  - name: FIS 
+  - name: FIS
     website: http://www.fisglobal.com/
     bio: Advanced Technology serves as a technology innovation incubator for the FIS’ Institutional and Wholesale business. We work with companies whose unique challenges require creative thinking and the clever uses of technology. We help our media and internet clients bring the latest technology and thinking to life and then apply these learnings to our financial services clients to accelerate their ideas from inspiration to production. Learn more at www.fisglobal.com/advanced-technology.
     location: Jacksonville, FL
