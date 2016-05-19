@@ -363,15 +363,21 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   }
 }
 
+.sponsor-container {
+  display: flex;
+  justify-content: center;
+}
+
 .sponsor {
   border: 2px solid $border-gray;
   border-radius: 10px;
   box-shadow: -8px 8px rgba(204,204,204,0.5);
-  margin-right: 20px;
+  margin-bottom: 20px;
   background-color: white;
 
   @include xs-screen {
     margin-bottom: 20px;
+    margin-right: 0;
   }
 }
 
@@ -381,24 +387,77 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 
 .gold-sponsors{
   margin-bottom: 25px;
+  width: 70%;
+
+  @include lg-screen {
+    width: 60%;
+  }
+
+  @include lte-sm-screen {
+    width: 100%;
+  }
 
   .small-image {
     height: 149px;
+  }
+
+  .sponsor-container {
+    width: 50%;
+
+    @include xs-screen {
+      width: 100%;
+    }
   }
 }
 
 .silver-sponsors {
   margin-bottom: 25px;
+  width: 70%;
 
   .small-image {
     height: 109px;
+  }
+
+  @include md-screen {
+    width: 80%;
+  }
+
+  @include lte-sm-screen {
+    width: 100%;
+  }
+
+  .sponsor-container {
+    width: 33%;
+
+    @include xs-screen {
+      width: 100%;
+    }
   }
 }
 
 .bronze-sponsors {
   margin-bottom: 50px;
+  width: 30%;
+
+  @include md-screen {
+    width: 35%;
+  }
+
+  @include lte-sm-screen {
+    width: 50%;
+  }
 
   .small-image {
     height: 68px;
   }
+
+  .sponsor-container {
+    width: 50%;
+
+    @include xs-screen {
+      width: 100%;
+    }
+
+  }
+
 }

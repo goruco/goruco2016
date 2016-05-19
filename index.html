@@ -168,27 +168,29 @@ layout: default
 
             <div class='sponsor-level {{ level }}-sponsors'>
               {% for sponsor in sponsor_level[1] %}
-              <div class='sponsor'>
-                <a href='#' data-toggle="modal" data-target="#{{ level }}-modal-{{ forloop.index }}">
+              <div class='sponsor-container'>
+                <div class='sponsor'>
+                  <a href='#' data-toggle="modal" data-target="#{{ level }}-modal-{{ forloop.index }}">
 
-                  <img class='img-responsive small-image' src="/assets/images/sponsors/{{ sponsor.name | slugify }}.png" />
-                </a>
+                    <img class='img-responsive small-image' src="/assets/images/sponsors/{{ sponsor.name | slugify }}.png" />
+                  </a>
 
-                <div class="modal fade" id="{{ level }}-modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <h4 class="modal-title">
-                          {{ sponsor.name }}
-                          <span class='modal-location'>{{ sponsor.location }}</span>
-                        </h4>
-                        <a href="{{ sponsor.website }}" target="_blank">
-                          <img class='img-responsive modal-image' src="/assets/images/sponsors/{{ sponsor.name | slugify }}.png" />
-                        </a>
-                        <div class='modal-link'>
-                          <a href="{{ sponsor.website }}" target="_blank">{{ sponsor.website }}</a>
+                  <div class="modal fade" id="{{ level }}-modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h4 class="modal-title">
+                            {{ sponsor.name }}
+                            <span class='modal-location'>{{ sponsor.location }}</span>
+                          </h4>
+                          <a href="{{ sponsor.website }}" target="_blank">
+                            <img class='img-responsive modal-image' src="/assets/images/sponsors/{{ sponsor.name | slugify }}.png" />
+                          </a>
+                          <div class='modal-link'>
+                            <a href="{{ sponsor.website }}" target="_blank">{{ sponsor.website }}</a>
+                          </div>
+                          {{ sponsor.bio }}
                         </div>
-                        {{ sponsor.bio }}
                       </div>
                     </div>
                   </div>
