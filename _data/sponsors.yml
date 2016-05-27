@@ -5,6 +5,10 @@
 #    location: New York, NY
 
 gold:
+  - name: Code Climate
+    website: https://www.codeclimate.com/
+    bio: ""
+    location: New York, NY
   - name: Blue Apron
     website: https://www.blueapron.com/
     bio: "Blue Apron is the leading fresh ingredient and recipe delivery service in the United States.  By delivering step-by-step recipes and seasonal, pre-portioned ingredients sourced directly from farms and suppliers, Blue Apron makes it fun and easy to cook incredible meals at home.
