@@ -9,6 +9,9 @@ gold:
     website: https://www.codeclimate.com/
     bio: ""
     location: New York, NY
+    bio: "Code Climate is automated code review for software development teams. Our open and extensible platform analyzes every commit for complexity, duplication, security, style, test coverage, and more –  so you can fix issues sooner and ship better code faster.
+
+<br/><br/>Code Climate engineers build software that runs static analysis at scale, analyzing 2 billion lines of code daily across over 90,000 repositories. We use and improve the software we build every day to deliver analysis wherever you work – on premise, on the command line, in your editor, and in the cloud."
   - name: Blue Apron
     website: https://www.blueapron.com/
     bio: "Blue Apron is the leading fresh ingredient and recipe delivery service in the United States.  By delivering step-by-step recipes and seasonal, pre-portioned ingredients sourced directly from farms and suppliers, Blue Apron makes it fun and easy to cook incredible meals at home.
