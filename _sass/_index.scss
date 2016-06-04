@@ -435,7 +435,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   }
 }
 
-.bronze-sponsors {
+.bronze-sponsors, .special-thanks-sponsors {
   margin-bottom: 50px;
   width: 30%;
 
@@ -459,6 +459,10 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
     }
 
   }
+}
+
+.special-thanks-sponsors {
+  justify-content: center;
 }
 
 .organizer-section.section {
