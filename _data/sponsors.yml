@@ -42,10 +42,13 @@ silver:
     website: ""
     bio: Parachute Health is bringing the proven e-Prescribe model to medical equipment. Working alongside the largest medical equipment suppliers and hospital systems in the US, Parachute Health is developing a cutting-edge communication platform that processes insurance orders with ease.
     location: ""
-
   - name: StreetEasy
     website: http://streeteasy.com/
     bio: StreetEasy® is New York City’s leading local real estate marketplace, providing accurate and comprehensive for-sale and for-rent listings from hundreds of real estate brokerages throughout New York City and the major NYC metropolitan area. We are a technology-driven group who constantly strives to use the best engineering tools available to build a cutting edge product, and we’re hiring. Be part of a focused, talented team that is creating fast, beautiful, and innovative tools to change how people buy and rent homes. Learn more about our open positions here.
+    location: New York, NY
+  - name: ShopKeep
+    website: http://shopkeep.com/
+    bio: Trusted by more than 23,000 independently owned businesses, ShopKeep provides point of sale hardware, cloud-based software and analytics and payment processing so small and medium-sized business owners can run a smarter business.
     location: New York, NY
 
 bronze:
