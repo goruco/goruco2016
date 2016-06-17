@@ -6,10 +6,12 @@ title: Presentation skills improv workshop for speakers
 
 <p>
   Public speaking can be scary, even more so when one is an introvert.
-  However, some people make it look so simple, they use the right tone,
+  But some people make it look so simple – they use the right tone,
   the right gestures, project correctly and enunciate every word.
-  This year, we offer our speaker line-up the opportunity
-  to take part in a presentation skills improv workshop,
+  And a good speaker is more engaging, more fun to watch, and can more
+  effectively get their point across to their audience.
+  To that end, this year we're offering our speakers the opportunity
+  to take part in a presentation skills improv workshop
   which will be taught by Jill Frutkin of the Engaging Educator.</p>
 
 <!--more-->
@@ -17,19 +19,19 @@ title: Presentation skills improv workshop for speakers
 <p>
   In this workshop, Jill will walk our speakers through presentation skills
   essential to being a more interesting speaker.
-  They will practice activities, work on breathing, learn warm-ups,
+  Using the power of Improv, they will practice activities, work on breathing, learn warm-ups,
   build confidence, address that fear of public speaking,
   and learn how to be a better presenter.</p>
 
 <p>
-  We appreciate that our attendees are willing to give up
-  a summer Saturday to be with us, and this is just another way that
-  we are working to make GORUCO the best tech conference in New York City.</p>
+  We appreciate that our attendees are willing to spend
+  a summer Saturday with us, and this is just another way that
+  we are working to make GORUCO the best tech conference around.</p>
 
 <h3>About Jill and The Engaging Educator</h3>
 
 <p>
-  <a href="http://jillfrutkin.com">Jill Frutkin</a> was an NYC Teaching Fellow,
+  <a href="http://www.jillfrutkin.com/">Jill Frutkin</a> was an NYC Teaching Fellow,
   and earned her Masters of Science in Teaching at Pace University.
   She is a NYS certified special education teacher with a focus on autism.
   She has experience working in both private and public schools,
