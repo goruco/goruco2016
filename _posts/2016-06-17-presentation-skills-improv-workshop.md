@@ -22,6 +22,13 @@ title: Presentation skills improv workshop for speakers
   and learn how to be a better presenter.</p>
 
 <p>
+  We appreciate that our attendees are willing to give up
+  a summer Saturday to be with us, and this is just another way that
+  we are working to make GORUCO the best tech conference in New York City.</p>
+
+<h3>About Jill and The Engaging Educator</h3>
+
+<p>
   <a href="http://jillfrutkin.com">Jill Frutkin</a> was an NYC Teaching Fellow,
   and earned her Masters of Science in Teaching at Pace University.
   She is a NYS certified special education teacher with a focus on autism.
