@@ -19,8 +19,9 @@ title: Presentation skills improv workshop for speakers
 <p>
   In this workshop, Jill will walk our speakers through presentation skills
   essential to being a more interesting speaker.
-  Using the power of Improv, they will practice activities, work on breathing, learn warm-ups,
-  build confidence, address that fear of public speaking,
+  Using the power of Improv, they will practice activities,
+  work on breathing, learn warm-ups, build confidence,
+  address that fear of public speaking,
   and learn how to be a better presenter.</p>
 
 <p>
