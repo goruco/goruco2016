@@ -215,202 +215,23 @@ layout: default
           </div>
           <div class='post'>
             <ul id='timeline'>
+
+              {% for schedule in site.data.schedule %}
               <li class='work'>
                 <input class='radio' id='work1' name='works' type='radio' checked>
                 <div class="relative">
-                  <label for='work1'>Keynote: Code Quality Lessons Learned</label>
-                  <span class='date'>10:00 AM</span>
-                  <span class='duration'>30 MIN</span>
+                  <label for='work1'>{{ schedule.title }} {% if schedule.icon %}<img src='/assets/images/{{schedule.icon}}.png' />{% endif %}</label>
+                  <span class='date'>{{ schedule.time }}</span>
+                  <span class='duration'>{{ schedule.duration }} MIN</span>
                   <span class='circle'></span>
                 </div>
                 <div class='content'>
                   <p>
-                  Bryan Helmkamp (NY)
+                  {{ schedule.name }}
                   </p>
                 </div>
               </li>
-              <li class='work'>
-                <input class='radio' id='work2' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work2'>The Guest: A Guide To Code Hospitality</label>
-                  <span class='date'>10:40 AM</span>
-                  <span class='duration'>30 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Nadia Odunayo (UK)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work3' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work3'>Symmetric API Testing</label>
-                  <span class='date'>11:35 AM</span>
-                  <span class='duration'>30 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Aditya Mukerjee (NY)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work4' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work4'>Pipe Operator for Ruby</label>
-                  <span class='date'>12:15 AM</span>
-                  <span class='duration'>10 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Fabio Akita (Brazil)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work5' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work5'>Introducing the Crystal Programming Language</label>
-                  <span class='date'>12:20 AM</span>
-                  <span class='duration'>10 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Will Leinweber (SF)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work6' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work6'>Ruby Racing: Challenging Ruby Methods</label>
-                  <span class='date'>12:40 AM</span>
-                  <span class='duration'>10 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Danielle Adams (NY)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work7' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work7'>Lunch <img src='/assets/images/lunchbowl.png' /></label>
-                  <span class='date'>12:55 AM</span>
-                  <span class='duration'>60 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Dos Toros
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work8' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work8'>Just a Ruby Minute</label>
-                  <span class='date'>02:20 PM</span>
-                  <span class='duration'>30 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Andrew Faraday (UK)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work9' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work9'>Impactful Refactors: Refactoring for Readability</label>
-                  <span class='date'>3:00 PM</span>
-                  <span class='duration'>10 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Anne Durham (Denver)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work10' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work10'>Database performance at scale for RoR and MySQL</label>
-                  <span class='date'>3:15 PM</span>
-                  <span class='duration'>10 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Rocio Delgado (NY)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work11' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work11'>Enumerable’s Ugly Cousin</label>
-                  <span class='date'>3:30 PM</span>
-                  <span class='duration'>10 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Ross Kaffenberger (NY)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work12' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work12'>Big Data with rubygems.org Download Data</label>
-                  <span class='date'>4:10 PM</span>
-                  <span class='duration'>30 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Aja Hammerly (Seattle)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work13' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work13'>Keynote: Cult(ure)</label>
-                  <span class='date'>4:50 PM</span>
-                  <span class='duration'>30 MIN</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Adam Cuppy (San Diego)
-                  </p>
-                </div>
-              </li>
-              <li class='work'>
-                <input class='radio' id='work14' name='works' type='radio'>
-                <div class="relative">
-                  <label for='work14'>After Party <img src='/assets/images/boat.png' /></label>
-                  <span class='date'>6:00 PM</span>
-                  <span class='duration'>3 HR</span>
-                  <span class='circle'></span>
-                </div>
-                <div class='content'>
-                  <p>
-                    Entertainment Cruises
-                  </p>
-                </div>
-              </li>
+              {% endfor %}
             </ul>
           </div>
         </div>
