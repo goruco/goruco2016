@@ -33,6 +33,7 @@
   time: 12:55 AM
   duration: 60
   icon: lunchbowl
+  milestone: true
 
 - title: "Just a Ruby Minute"
   name: Andrew Faraday (UK)
@@ -69,3 +70,4 @@
   time: 6:00 PM
   duration: 180
   icon: boat 
+  milestone: true
