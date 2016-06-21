@@ -1,5 +1,9 @@
 .section {
   margin-top: 60px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .section-divider {

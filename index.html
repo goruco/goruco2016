@@ -4,7 +4,7 @@ layout: default
 
 <div class='announcement'>
   <h3>
-    <div class='date'>Saturday, June 25th</div>
+    <div class='header_date'>Saturday, June 25th</div>
     join us for our 10 year anniversary
   </h3>
   <h1>
@@ -12,9 +12,9 @@ layout: default
     Conference in new york city
   </h1>
 
-  <a class='videos-button' href='https://ti.to/goruco/2016' target='_blank'>
+  <!--a class='videos-button' href='https://ti.to/goruco/2016' target='_blank'>
     Tickets
-  </a>
+  </a-->
 
   <div class='speaking'>
     <div class='speaking-items'>
@@ -29,64 +29,35 @@ layout: default
 <div class='container section-container'>
   <div class='row'>
     <div class='col-xs-12'>
-      <div class='content-wrapper section'>
-        <div class='section-divider'>
-          <hr />
-          <img src='/assets/images/ruby-hr.png' />
-        </div>
-        <div class='info contact-info'>
-          <h2>Tickets</h2>
-          <p>ORGANIZED BY VOLUNTEERS. PROCEEDS GO BACK TO THE COMMUNITY</p>
-        </div>
-        <div class="row">
-          <div class='col-xs-12 col-sm-4'>
-            <div class="conference-updates">
-              <h4>GET CONFERENCE UPDATES</h4>
-              <form action="//goruco.us2.list-manage.com/subscribe/post?u=00945f50a161df14372a84a34&amp;id=cdf39163af" form.signup-form action="//goruco.us2.list-manage.com/subscribe/post?u=00945f50a161df14372a84a34&amp;id=cdf39163af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
-
-                <input class="signup required mail s3 ui-form-input-on-dark"  type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email Address">
-                <input class="signup light-ui-btn" type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe">
-                <div style="position: absolute; left: -5000px;">
-                  <input name="b_00945f50a161df14372a84a34_cdf39163af" tabindex="-1" type="text" value="">
-                </div>
-              </form>
-              <p>
-              Or get updates on <a href='https://twitter.com/goruco' target="_blank">Twitter</a>
-              </p>
+      <div class='content-wrapper'>
+        <div class='section' id='sponsors'>
+          <div class='row'>
+            <div class='col-xs-12'>
+              <div class='section-divider'>
+                <hr />
+                <img src='/assets/images/ruby-hr.png' />
+              </div>
+              <h2>Schedule</h2>
             </div>
           </div>
+          <div class='post schedule-wrap'>
+            <ul class='schedule'>
+              {% for schedule in site.data.schedule %}
+              <li class="schedule-item {% if schedule.milestone %}milestone{% endif %}">
+                <div class="relative">
+                  <div class="left">
+                    <span class='time'>{{ schedule.time }}</span>
+                    <span class='duration'>{{ schedule.duration }} MIN</span>
+                  </div>
 
-          <div class='col-xs-12 col-sm-8'>
-            <div class="row conference-tickets">
-              <p class="type-center">Your ticket includes breakfast, lunch, snacks,
-              and a Boat Party, on a Boat.
-              <br />
-              Attendees are welcome to bring a guest to the party.</p>
-              <div class="col-xs-6">
-                <h3>Regular</h3>
-                <div class="price-cost">$399</div>
-                <div class="ticket-desc">If your employer is buying your
-                  ticket, or you identify as part of the majority demographics
-                  of the Ruby/Rails community, this ticket is for you!</div>
-              </div>
-              <div class="col-xs-6">
-                <h3>Diversity <span><i class=""></i></span></h3>
-                <div class="price-cost">$299</div>
-                <div class="ticket-desc">If you identify as a minority in
-                  the Ruby/Rails community, this ticket is for you!
-                  Please enter DIVERSITY as your discount code.
-                  It is 75% of the regular ticket price in our attempt
-                  to recognize the gender wage gap in the US as of 2011.
-                  This discount made possible by
-                  <a href="http://www.stridenyc.com/" target="_blank">Stride</a> sponsorship.
+                  <div class="right">
+                    <div class="title">{{ schedule.title }} {% if schedule.icon %}<img class="icon" src='/assets/images/{{schedule.icon}}.png' />{% endif %}</div>
+                    <div class='name'>{{ schedule.name }}</div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-xs-12">
-                <a class='dark-ui-btn' href='https://ti.to/goruco/2016' target='_blank'>
-                  Buy Now
-                </a>
-              </div>
-            </div>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
 
@@ -253,6 +224,70 @@ layout: default
                 Follow us on <a href='https://twitter.com/goruco' target="_blank">Twitter</a>
                 </p>
               </div>
+          </div>
+        </div>
+
+        <div class="row section">
+          <div class="col-xs-12">
+            <div class='section-divider'>
+              <hr />
+              <img src='/assets/images/ruby-hr.png' />
+            </div>
+            <div class='info contact-info'>
+              <h2>Tickets</h2>
+              <p>ORGANIZED BY VOLUNTEERS. PROCEEDS GO BACK TO THE COMMUNITY</p>
+            </div>
+            <div class="row">
+              <div class='col-xs-12 col-sm-4'>
+                <div class="conference-updates">
+                  <h4>GET CONFERENCE UPDATES</h4>
+                  <form action="//goruco.us2.list-manage.com/subscribe/post?u=00945f50a161df14372a84a34&amp;id=cdf39163af" form.signup-form action="//goruco.us2.list-manage.com/subscribe/post?u=00945f50a161df14372a84a34&amp;id=cdf39163af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+    
+                    <input class="signup required mail s3 ui-form-input-on-dark"  type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email Address">
+                    <input class="signup light-ui-btn" type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe">
+                    <div style="position: absolute; left: -5000px;">
+                      <input name="b_00945f50a161df14372a84a34_cdf39163af" tabindex="-1" type="text" value="">
+                    </div>
+                  </form>
+                  <p>
+                  Or get updates on <a href='https://twitter.com/goruco' target="_blank">Twitter</a>
+                  </p>
+                </div>
+              </div>
+    
+              <div class='col-xs-12 col-sm-8'>
+                <div class="row conference-tickets">
+                  <p class="type-center">Your ticket includes breakfast, lunch, snacks,
+                  and a Boat Party, on a Boat.
+                  <br />
+                  Attendees are welcome to bring a guest to the party.</p>
+                  <div class="col-xs-6">
+                    <h3>Regular</h3>
+                    <div class="price-cost">$399</div>
+                    <div class="ticket-desc">If your employer is buying your
+                      ticket, or you identify as part of the majority demographics
+                      of the Ruby/Rails community, this ticket is for you!</div>
+                  </div>
+                  <div class="col-xs-6">
+                    <h3>Diversity <span><i class=""></i></span></h3>
+                    <div class="price-cost">$299</div>
+                    <div class="ticket-desc">If you identify as a minority in
+                      the Ruby/Rails community, this ticket is for you!
+                      Please enter DIVERSITY as your discount code.
+                      It is 75% of the regular ticket price in our attempt
+                      to recognize the gender wage gap in the US as of 2011.
+                      This discount made possible by
+                      <a href="http://www.stridenyc.com/" target="_blank">Stride</a> sponsorship.
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <a class='dark-ui-btn' href='https://ti.to/goruco/2016' target='_blank'>
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
