@@ -65,9 +65,14 @@
   time: 4:50 PM
   duration: 30
 
-- title: "After Party "
+- title: "After Party Boarding "
   name: Entertainment Cruises - Chelsea Piers - Pier 62, West 23rd Street
   time: 6:00 PM
-  duration: 180
+  duration: 45
   icon: boat 
   milestone: true
+
+- title: "After Party Set Sail"
+  name: Ahoy Mateys!
+  time: 6:45 PM
+  duration: 135
