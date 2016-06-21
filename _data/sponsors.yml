@@ -31,7 +31,10 @@ Our software enables us to tackle complex supply chain and logistical challenges
     website: http://xogroupinc.com/
     bio: We build applications that inspire, inform and cheer our users through our brands, The Knot, The Nest and The Bump as they move through life’s most amazing (and stressful!) milestones. From the marriage proposal to creating a home and starting a family together, we’re there for every step of the journey. We use Ruby, Rails, Swift, and many other languages and technologies with cleverness that is required at our scale and speed of feature development
     location: New York, NY
-
+  - name: Kickback
+    website: http://kickback.com/
+    bio: "Kickback lets you play video games for money. Every month we power over 1,000,000 paid matches for hundreds of thousands of players globally. We're building the casino of the future, except instead of boring card games and slot machines, you're playing the games you already love for money, like Counter-Strike, Hearthstone and League of Legends.<br><br>Login, put down some cash and pwn noobs. Who knows, you might even be a millionaire by next week."
+    location: San Francisco, CA
 
 silver:
   - name: Dev Bootcamp
