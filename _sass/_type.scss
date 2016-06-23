@@ -16,3 +16,15 @@ h4 {
 .type-center {
   text-align: center;
 }
+
+.type-no-shadow {
+  text-shadow: 0;
+}
+
+.type-on-dark {
+  color: $white;
+
+  p {
+    color: $white;
+  }
+}
