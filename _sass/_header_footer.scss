@@ -15,7 +15,7 @@ header {
   letter-spacing: 2px;
   margin-bottom: 0;
   border-color: transparent;
-  @include sm-screen {
+  @include md-screen {
     padding-top: 25px;
     text-align: center;
     flex-direction: column;
@@ -23,7 +23,7 @@ header {
     border-bottom: 3px solid #CF2941;
   }
 
-  @include xs-screen {
+  @include md-screen {
     height: 42px;
     border-bottom: transparent;
     border-color: transparent;
@@ -43,7 +43,7 @@ header {
       }
     }
 
-    @include sm-screen {
+    @include md-screen {
       margin-left: 0;
     }
   }
@@ -64,7 +64,7 @@ header {
     display: flex;
     justify-content: flex-end;
 
-    @include sm-screen {
+    @include md-screen {
       padding-bottom: 30px;
     }
   }
@@ -81,11 +81,11 @@ header {
   opacity: .85;
   letter-spacing: 2px;
   background-color: rgba($red, 1);
-  @include sm-screen {
+  @include md-screen {
     height: 100%;
   }
 
-  @include xs-screen {
+  @include md-screen {
     height: 100%;
   }
 
@@ -94,7 +94,7 @@ header {
     display: flex;
     justify-content: flex-end;
 
-    @include xs-screen {
+    @include md-screen {
       justify-content: flex-start;
     }
   }
@@ -108,10 +108,7 @@ header {
       opacity: 1;
     }
 
-    @include sm-screen {
-    }
-
-    @include xs-screen {
+    @include md-screen {
       margin-top: 18px;
       margin-bottom: 30px;
     }
