@@ -71,10 +71,10 @@
   duration: 30
 
 - title: "After Party Boarding "
-  name: Entertainment Cruises - Chelsea Piers - Pier 62, West 23rd Street
+  name: Entertainment Cruises - Chelsea Piers - Pier 61, West 23rd Street
   time: 6:00 PM
   duration: 45
-  icon: boat 
+  icon: boat
   milestone: true
 
 - title: "After Party Set Sail"
