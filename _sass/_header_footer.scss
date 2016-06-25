@@ -84,6 +84,23 @@ header {
   background-color: rgba($red, 1);
   @include clearfix;
 
+  @include xs-screen {
+    text-align: left;
+
+    .copywrite {
+      padding-left: 35px !important;
+      justify-content: flex-start !important;
+    }
+
+    .nav-links {
+      margin-bottom: 20px;
+    }
+  } 
+
+  .container {
+    background-color: rgba($red, 1);
+  }
+
   @include md-screen {
     height: 100%;
   }
