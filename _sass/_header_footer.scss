@@ -1,6 +1,7 @@
 header {
   border-bottom: 3px solid #CF2941;
   position: fixed;
+  top: 0;
   z-index: 100;
   width: 100%;
   border-bottom: 2px solid rgba(white, 0.1);
@@ -81,6 +82,8 @@ header {
   opacity: .85;
   letter-spacing: 2px;
   background-color: rgba($red, 1);
+  @include clearfix;
+
   @include md-screen {
     height: 100%;
   }
